@@ -2,6 +2,11 @@ body {
     background-color: antiquewhite;
 }
 
+/* For mobile phones, we go mobile-first */
+[class*="col-"] {
+    width: 100%;
+  }
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -13,10 +18,17 @@ body {
     @import 'min-width-600px.less';
 }
 
+
+/* Small devices (lportrait tablets and large phones, 768px and up) */
+@media only screen and (max-width: 768px) {
+    @import 'max-width-768px.less';
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    @import 'mid-width-768px.less';
+    @import 'min-width-768px.less';
 }
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
