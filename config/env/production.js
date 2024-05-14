@@ -269,7 +269,7 @@ module.exports = {
     //   'https://example.com',
     //   'https://staging.example.com',
     // ],
-
+    onlyAllowOrigins: ['http://146.190.19.227:1337', 'http://localhost:1337']
 
     /***************************************************************************
     *                                                                          *
