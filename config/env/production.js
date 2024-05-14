@@ -148,9 +148,9 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cors: {
-      // allowOrigins: [
-      //   'https://example.com',
-      // ]
+       allowOrigins: [
+         'http://146.190.19.227:1337',
+       ]
     },
 
   },
@@ -355,7 +355,7 @@ module.exports = {
   * this, just try deploying without setting it and see if it works.)       *
   *                                                                         *
   ***************************************************************************/
-  // port: 80,
+  port: 1337,
 
 
 
