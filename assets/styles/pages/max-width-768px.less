@@ -1,9 +1,91 @@
 body { 
-    background-color: rgb(245, 249, 255);
+    background-color: aquamarine;
 }
+
+@import 'buttons.less';
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
 }
 
-@import 'buttons.less';
+.clear-both{
+    clear: both;
+}
+.our-row{
+    /*width: 700px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;*/
+}
+.card-with-bg{
+    /*overflow: hidden;*/
+    width: 100%; 
+    /*flex: 1;*/
+}
+.whitewashDiv{
+   
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background: var(--Primay-White, linear-gradient(0deg, rgba(255, 255, 255, 0.986) 0%, rgb(167, 199, 218) 100%), rgb(120, 116, 194));
+    opacity: 0.9;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    z-index: 5;
+    
+    /*max-height: 375px;*/
+}
+.buttonOverlayDiv{
+    
+    height: 100%;
+    
+    position: absolute;
+    /*border: 1px solid red; width: 15rem;
+    width: 100%;
+    top: 3rem;
+    left: 5rem;*/
+    z-index: 5;
+    max-height: 280px;
+    margin-top: 2%;
+    margin-left: 2%;
+   
+}
+.mainDiv{
+    /*padding: 1rem;*/
+}
+.imageDiv{
+}
+.imageDiv img {
+    /*width: 360px;
+    max-width:100%;*/
+    position: absolute;
+    /*top: -33px;
+    left: -137px;*/
+    display:block;
+    height:auto;
+    object-fit: contain;
+}
+
+.mobile-btn{
+    /*margin: 1rem;*/
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+    height: 2.5rem;
+    text-align: center;
+
+    /*gap: 1rem;
+    align-self: stretch;*/
+    text-decoration: none;
+    font-weight: 100;
+    word-wrap: break-word;
+    color: var(--Primary-White, rgb(255, 255, 255));
+    font-size: 1rem;
+    font-style: normal;
+    line-height: normal;
+    border-radius: 9px;
+    background: var(--Primay-green, linear-gradient(0deg, rgba(14, 60, 95, 0.986) 0%, rgb(86, 98, 121) 100%), rgb(52, 73, 121));
+    padding: 10px 5px 5px 5px;
+    display: block;
+}
