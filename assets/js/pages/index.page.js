@@ -35,6 +35,10 @@ parasails.registerPage('index', {
       }else{
         chatWindow.attr('class', 'chat-window-hidden');
       }
+    },
+
+    begoneDemon: async function(){
+      console.log('demon is gone!');
     }
 
 

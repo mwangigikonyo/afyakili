@@ -24,7 +24,9 @@ parasails.registerPage('chat-window', {
     methods: {
         _testBtn: async function(btn){
             console.log(' Btn ', btn, 'at chat-window < :: >',new Date());
-        }
+        },
+
+        
     }
   });
   
