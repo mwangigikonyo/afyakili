@@ -1,15 +1,28 @@
+<div id="chat-window-contaier" class="chat-window-hidden">
 
-<div id="chat-window" class="container-fluid" v-cloak>
-    <div class="row chat-window-manubar">
-        <div class="col col-sm-2 chat-menubar-item my-1 mx-1">
-           Chat 1: Bla bla bla bla 
-        </div>
-        
-        <div class="col col-sm-2 chat-menubar-item  my-1 mx-1">
-            <a @click="begoneDemon()">Chat 2: Bla bla bla bla </a> 
+    
+    <%- include('chats-popup.ejs') %>
+    <%- include('settings-popup.ejs') %>
+    <%- include('rafikis-popup.ejs') %>
+
+    <div id="chat-window" class="container-fluid" v-cloak>
+        <div class="row chat-window-manubar">
+
+            <div @click="_popupWindow('chats-popup')" class="col-1 col-sm-1 chat-menubar-item my-1 mx-1">
+                <i class="fa fa-comments control-icons" aria-hidden="true"></i> <a>Chats</a>
+            </div>
+
+            <div @click="_popupWindow('rafikis-popup')" class="col-1 col-sm-1 chat-menubar-item my-1 mx-1">
+                <i class="fa fa-users control-icons" aria-hidden="true"></i> <a>Rafikis</a>
+            </div>
+
+            <div @click="_popupWindow('settings-popup')" class="col-1 col-sm-1 chat-menubar-item  my-1 mx-1">
+                <!--a @click="begoneDemon()">Chat 2:  </a    -->
+                <i class="fa fa-cogs control-icons" aria-hidden="true"></i> <a>Settings</a>
+
+                <!--i class="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"></i> -->
+
+            </div>
         </div>
     </div>
 </div>
-
-<!--script src="/js/pages/chat-window/chat-window.page.js"></script-->
-    

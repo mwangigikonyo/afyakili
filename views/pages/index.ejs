@@ -1,69 +1,10 @@
 <div id="index" v-cloak>
-    <div class="container-fluid my-5">
-        <div class="row gx-3">
-            <div class="col- col-sm-6 col-md-5">
 
-                <div @click="_testBtn('suicidal')" class="mobile-btn suicidal">I feel suicidal</div>
-                <div @click="_testBtn('depressed')" class="mobile-btn depressed">I feel depressed</div>
-                <div @click="_testBtn('stuck')" class="mobile-btn stuck">I feel stuck</div>
-                <div @click="_testBtn('just-talk')" class="mobile-btn just-talk">I just want to talk to someone</div>
-                <div @click="_testBtn('professional')" class="mobile-btn professional">I want to talk to a professional</div>
+    <div id="landingpageDiv">
+        <%- include('landing-page-div.ejs') %>
+    </div>
 
-            </div>
-            <div class="col- col-sm-6 col-md-7">
-                <div class="h-100 p-3 text-white bg-dark-blue rounded-3">
-                    <h1 class="display-5 fw-bold">What is <b>Rafiki?</b></h1>
-                    <p class="col-md-12">
-                        <b>Rafiki</b> is Swahili for <b><i>friend.</i></b> </p>
-                    <p class="col-md-12">
-                        Rafiki is the place you go when you need a friend to talk to.</p>
-
-                    <p class="col-md-12">
-                        We accord you a safe, self
-                        sharing space where you can
-                        unravel yourself and reconnect
-                        with your true self.
-                    </p>
-                    <p class="col-md-12">
-                        At <b>Rafiki</b>, you have a friend that hears you,
-                        understands you and what you are going
-                        through and is available to offer you
-                        counsel at the touch of a dial in the comfort
-                        of your home wherever you are. </p>
-                    <p class="col-md-12">
-                        No matter what you are going through,
-                        <b>Rafiki</b> assures you of the support you need
-                        without prejudice and utmost confidentiality in a
-                        loving environment that wants to see you reconnect
-                        and realign with your true self as you fulfil your
-                        divine purpose.
-                    </p>
-
-                    <p class="col-md-12">
-                        <b>Rafiki</b> is a platform created by a
-                        group of friends consisting of mental health
-                        practitioners, well-wishers, and community leaders
-                        who have come together to offer mental health first aid.
-                    </p>
-
-                    <p class="col-md-12">
-                        <b>Rafiki</b> has a directory of professionals ready to
-                        attend to individuals needing mental health first aid.
-                    </p>
-
-                    <div @click="_testBtn('register-professional')"  class="mobile-btn professional">I'm a professional, onboard me!</div>
     
-                </div>
-            </div>
-        </div>
-    </div>     
+    <%- include('chat-window/chat-window.ejs') %>
     
-    <div id="chat-window-contaier" class="chat-window-hidden">
-            <%- include('chat-window/chat-window.ejs') %>
-        </div>
-
 </div>
-
-
-
-
