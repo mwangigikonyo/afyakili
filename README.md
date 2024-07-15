@@ -4,7 +4,7 @@ This SaaS helps serve various mental health providers.
 The providers can be;
 - Government institutions
 - Private hospitals
-- Social Groups (E.g Rafiki - Sheila Toya)
+- Social Groups (E.g Rafiki)
 
 
 # How to run
